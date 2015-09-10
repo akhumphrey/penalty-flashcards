@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--
+    Copyright (c) 2015 by Scott Freeman (http://codepen.io/iamscottfreeman/pen/bVdrYj)
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    -->
+
+    <link href="http://assets.codepen.io/assets/fullpage/fullpage-c298ed8e706bd9e11e316201c9d6873d.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@CodePen">
+    <meta name="twitter:title" content="Penalty Flashcards">
+    <meta name="twitter:description" content="Flash cards to help roller derby referees practice calling penalties....">
+    <meta name="twitter:image" content="http://s3-us-west-2.amazonaws.com/i.cdpn.io/225261.bVdrYj.7bd27830-80bf-45c5-9bc5-22be276e7564.png">
+
+    <meta property="og:image" content="http://codepen.io/iamscottfreeman/pen/bVdrYj/image/large.png" itemprop="thumbnailUrl">
+    <meta property="og:title" content="Penalty Flashcards">
+    <meta property="og:url" content="http://codepen.io/iamscottfreeman/details/bVdrYj">
+    <meta property="og:site_name" content="CodePen">
+
+    <link rel="alternate" type="application/json+oembed" href="http://codepen.io/api/oembed?url=http://codepen.io/iamscottfreeman/pen/bVdrYj&format=json" title="Penalty Flashcards" />
+
+    <meta name="google" value="notranslate">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="//codepen.io/assets/reset/reset.css">
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext'>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Penalty Flashcards</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="js-color">
+        <div class="js-number">Roller Derby Referee Penalty Flash Cards</div>
+      </div>
+      <div class="js-string"><span>Select your options below.<br>Press 'refresh' to start.</span></div>
+      <div class="js-verbal hidden"></div>
+      <div class="js-nso hidden"></div>
+      <div class="js-image hidden"></div>
+    </div>
+
+    <div id="form">
+      <p>
+        <button class="js-refresh">Refresh</button>
+      </p>
+      <p>
+        <input type="checkbox" class="js-autorefresh" id="check-autorefresh" />
+        <label for="check-autorefresh">Autorefresh every</label>
+        <select class="js-autorefresh-interval">
+          <option value="5">5 seconds</option>
+          <option value="10">10 seconds</option>
+          <option value="15">15 seconds</option>
+          <option value="20" selected>20 seconds</option>
+          <option value="25">25 seconds</option>
+          <option value="30">30 seconds</option>
+          <option value="35">35 seconds</option>
+          <option value="40">40 seconds</option>
+        </select>
+      </p>
+      <p>
+        <input type="checkbox" class="js-monochrome" id="check-monochrome">
+        <label for="check-monochrome">Monochrome colours</label>
+      </p>
+      <p>
+        <input type="checkbox" class="js-show-image" id="check-image" data-toggle="js-image">
+        <label for="check-image">Show image</label>
+      </p>
+      <p>
+        <input type="checkbox" class="js-show-verbal" id="check-verbal" data-toggle="js-verbal">
+        <label for="check-verbal">Verbal queue</label>
+      </p>
+      <p>
+        <input type="checkbox" class="js-show-nso" id="check-nso" data-toggle="js-nso">
+        <label for="check-nso">NSO code</label>
+      </p>
+      <p>
+        <input type="checkbox" class="js-penalty-only" id="penalty-only" checked="checked">
+        <label for="penalty-only">Penalties only</label>
+      </p>
+      <p><small>Gifs from <a href="http://rdjunkies.tumblr.com/" target="_blank">rdjunkies.tumblr.com</a>. Source: <a href="http://rdjunkies.tumblr.com/post/79569519003/wftda-hand-signals-in-gifs-part-1" target="_blank">#</a> <a href="http://rdjunkies.tumblr.com/post/79571555618/wftda-hand-signals-in-gifs-part-2-penalties" target="_blank">#</a> <a href="http://rdjunkies.tumblr.com/post/79572307034/wftda-hand-signals-in-gifs-part-3-misc" target="_blank">#</a>. Comments/suggestions? <a href="mailto:email@scottfreeman.net">Feedback</a></small></p>
+    </div>
+  </body>
+</html>
